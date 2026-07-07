@@ -1,0 +1,68 @@
+name: repro_eval_framework_dataset
+version: 0.1.0
+description: Papers with both truth specs and new_reproduce outputs in this workspace.
+
+defaults:
+  repo_root: .
+  output_root: artifacts_v2_framework_batch
+  run_asserts: true
+  preserve_sources: true
+  agent:
+    enabled: true
+    provider: claude_cli
+    command: claude
+    timeout: 1800
+    permission_mode: bypassPermissions
+
+papers:
+  - paper_id: 2604.04477v1
+    reproduce_dir: new_reproduce/2604.04477v1
+    truth: repro_eval_framework/truth/2604.04477v1.md
+
+  - paper_id: 2604.04518v1
+    reproduce_dir: new_reproduce/2604.04518v1
+    truth: repro_eval_framework/truth/2604.04518v1.md
+
+  - paper_id: 2604.04673v1
+    reproduce_dir: new_reproduce/2604.04673v1
+    truth: repro_eval_framework/truth/2604.04673v1.md
+
+  - paper_id: 2604.04681v1
+    reproduce_dir: new_reproduce/2604.04681v1
+    truth: repro_eval_framework/truth/2604.04681v1.md
+
+  - paper_id: 2604.04832v1
+    reproduce_dir: new_reproduce/2604.04832v1
+    truth: repro_eval_framework/truth/2604.04832v1.md
+
+  - paper_id: 2604.04842v1
+    reproduce_dir: new_reproduce/2604.04842v1
+    truth: repro_eval_framework/truth/2604.04842v1.md
+
+  - paper_id: 2604.04858v1
+    reproduce_dir: new_reproduce/2604.04858v1
+    truth: repro_eval_framework/truth/2604.04858v1.md
+
+  - paper_id: 2604.04895v1
+    reproduce_dir: new_reproduce/2604.04895v1
+    truth: repro_eval_framework/truth/2604.04895v1.md
+
+  - paper_id: 2604.04911v1
+    reproduce_dir: new_reproduce/2604.04911v1
+    truth: repro_eval_framework/truth/2604.04911v1.md
+
+  - paper_id: 2604.04914v1
+    reproduce_dir: new_reproduce/2604.04914v1
+    truth: repro_eval_framework/truth/2604.04914v1.md
+
+  - paper_id: 2604.04923v1
+    reproduce_dir: new_reproduce/2604.04923v1
+    truth: repro_eval_framework/truth/2604.04923v1.md
+
+  - paper_id: 2604.04930v1
+    reproduce_dir: new_reproduce/2604.04930v1
+    truth: repro_eval_framework/truth/2604.04930v1.md
+
+  - paper_id: bonjean_2002
+    reproduce_dir: new_reproduce/bonjean_2002
+    truth: repro_eval_framework/truth/bonjean_2002.md

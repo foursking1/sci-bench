@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+artifacts/
+artifacts_v2/
+artifacts_v2_framework/
+artifacts_v2_framework_batch/
+new_reproduce/
+

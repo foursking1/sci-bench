@@ -1,0 +1,11 @@
+paper_id: 2604.04858v1
+repo_root: .
+reproduce_dir: new_reproduce/2604.04858v1
+truth: repro_eval_framework/truth/2604.04858v1.md
+output_dir: artifacts_v2_framework/2604.04858v1_replay
+run_asserts: true
+preserve_sources: true
+agent:
+  enabled: true
+  provider: replay
+  replay_artifacts: artifacts/2604.04858v1

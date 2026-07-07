@@ -1,0 +1,7 @@
+paper_id: 2604.04673v1
+repo_root: .
+reproduce_dir: new_reproduce/2604.04673v1
+truth: repro_eval_framework/truth/2604.04673v1.md
+output_dir: artifacts_v2_framework/2604.04673v1
+run_asserts: true
+preserve_sources: true
