@@ -25,6 +25,7 @@ truth/assertion 规格、复现目录中的输出文件、确定性采集器和 
 ```text
 .
 ├── README.md
+├── papers/
 ├── requirements.txt
 ├── repro_eval_framework/
 │   ├── README.md
@@ -54,6 +55,7 @@ truth/assertion 规格、复现目录中的输出文件、确定性采集器和 
 - `repro_eval_framework/dataset/manifest.yaml`: 当前可运行评测集合，记录 paper id、复现目录和 truth 路径。
 - `repro_eval_framework/evals/`: 单篇评测配置示例，包括 deterministic、Claude agent 和 replay 模式。
 - `repro_eval_framework/repro_eval/collectors/`: 证据采集器，包括确定性 collector 和 agent collector。
+- `papers/`: 当前 truth 集合对应的 24 篇论文 PDF，统一命名为 `papers/<paper_id>.pdf`。
 - `result/`: 当前评测集合的结果文档，最新汇总见 `result/最新结果.md`。
 
 ## 评测流程
@@ -101,6 +103,7 @@ artifacts_v2_framework/<paper_id>/agent/
 当前仓库内置：
 
 - truth 文件数：24
+- paper PDF 数量：24
 - manifest 可运行论文数：13
 - 最新已验证论文数：4
 
@@ -193,6 +196,7 @@ python repro_eval_framework/run_eval.py batch \
 ## 输入与外部数据
 
 本仓库提交的是评测框架和 truth 集合，不包含大型复现工作区、虚拟环境或运行 artifacts。
+论文 PDF 已放在 `papers/` 下，用于 truth 审查和 benchmark 维护。
 manifest 中的 `reproduce_dir` 默认指向：
 
 ```text
